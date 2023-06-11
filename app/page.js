@@ -14,12 +14,12 @@ export default function App() {
     
     <main>
       <Navbar />
-      {/* <About />
-      <Projects />
+      <About />
+      {/* <Projects />
       <Qualification />
       <Skills />
       <Testimonials />
-      <Contact /> */}
+      <Contact /> */} 
     </main>
   );
 }

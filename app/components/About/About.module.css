@@ -1,0 +1,143 @@
+.about_container {
+    width: 100%;
+    display: flex;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .about_container {
+        flex-direction: row;
+    }
+}
+
+.about_infotext {
+    display: flex;
+    margin-bottom: 4rem;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .about_infotext {
+        padding-right: 4rem;
+        margin-bottom: 0;
+        text-align: left;
+        align-items: flex-start;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about_infotext {
+        padding-right: 6rem;
+        flex-grow: 1;
+    }
+}
+
+.about_title {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    .about_title {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+.about_break {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .about_break {
+        display: inline-block;
+    }
+}
+
+.about_info {
+    margin-bottom: 2rem;
+    line-height: 1.625;
+
+}
+
+.about_contactme {
+    display: flex;
+    justify-content: center;
+}
+
+.about_contact {
+    display: inline-flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: #10B981;
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    border-radius: 0.25rem;
+    border-width: 0;
+}
+
+.about_contact:hover {
+    background-color: #059669;
+}
+
+.about_projects {
+    display: inline-flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: 1rem;
+    background-color: #1F2937;
+    color: #9CA3AF;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    border-radius: 0.25rem;
+    border-width: 0;
+}
+
+.about_projects:hover {
+    background-color: #374151;
+    color: #ffffff;
+}
+
+.about_imgcontainer {
+    width: 83.333333%;
+    overflow: hidden;
+}
+
+@media (min-width: 768px) {
+    .about_imgcontainer {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .about_imgcontainer {
+        width: 100%;
+        max-width: 32rem;
+    }
+}
+
+.about_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 0.25rem;
+}
