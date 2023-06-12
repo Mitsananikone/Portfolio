@@ -1,0 +1,234 @@
+.projects_section {
+    padding-top: 100px;
+    background-color: #111827;
+    color: #9CA3AF;
+}
+
+.projects_container {
+    display: flex-box;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .projects_container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.projects_iconContainer {
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.projects_icon {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    width: 2.5rem;
+}
+
+.projects_container>h1 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    .projects_container>h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+.projects_container>p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    line-height: 1.625;
+}
+
+@media (min-width: 1024px) {
+    .projects_container>p {
+        width: 33%;
+    }
+}
+
+.projects_projectbox {
+    /* flex: 1 1 250px;  */
+    /* padding-left: auto;
+    padding-right: auto; */
+    position: relative;
+    display: flex;
+
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 60%;
+    margin: 2em;
+}
+
+.projects_container>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgBox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+
+}
+
+@media (max-width: 768px) {
+    .imgBox {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.projects_projectBoxContainer {
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(17, 24, 39, 0.9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 4px;
+    border-color: #1F2937;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin: 0;
+    padding: 32px;
+
+
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer {
+    opacity: 1;
+    color: white;
+    border: 1px solid #34D399;
+    border-radius: 4px;
+    line-height: 1.5rem;
+
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer>h1 {
+    font-weight: 300;
+    color: #34D399;
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer>h2 {
+    font-weight: 800;
+    color: #34D399;
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer>p {
+    font-weight: 200;
+}
+
+.projects_gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* border: 1px solid blue; */
+    margin: 2em;
+}
+
+@media (max-width: 600px) {
+    .projects_container {
+        display: flex;
+        font-size: small;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .projects_projectBoxContainer {
+        width: 400px;
+      
+    }
+
+    .projects_gallery {
+        width: 400px;
+    }
+
+    .imgBox {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .projects_projectBoxContainer {
+        width: 100%;
+    }
+
+    .projects_gallery {
+        width: 90%;
+    }
+
+    .imgBox {
+        width: 100%;
+    }
+
+    .break {
+        /* display: none; */
+    }
+
+    .projects_projectBoxContainer>p {
+        display: none;
+    }
+    .projects_projectBoxContainer>h1 {
+        font-size: large;
+    }
+}
+
+.projects_gallery+h2 {
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.projects_gallery+h1 {
+    margin-bottom: 0.75rem;
+    color: #ffffff;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 500;
+}
+
+.projects_gallery>p {
+    line-height: 1.625;
+}
+
+.projects_gallery>a {
+    width: 400px;
+}

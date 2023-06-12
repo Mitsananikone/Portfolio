@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className={styles.navbar_container}>
         <a className={styles.navbar_title}>
           <a href="#about">
-            Mit Sananikone
+            Mit Sananikone 
           </a>
         </a>
         <nav className={styles.navbar_nav}>

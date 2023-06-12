@@ -141,3 +141,8 @@
     object-position: left;
     border-radius: 0.25rem;
 }
+
+#about_section {
+    background-color: #111827;
+    color: #9CA3AF;
+}

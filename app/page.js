@@ -15,8 +15,8 @@ export default function App() {
     <main>
       <Navbar />
       <About />
-      {/* <Projects />
-      <Qualification />
+       <Projects />
+      {/*<Qualification />
       <Skills />
       <Testimonials />
       <Contact /> */} 
