@@ -1,0 +1,251 @@
+#qual_section {
+  background-color: #111827;
+  color: #9CA3AF;
+  height: 1200px;
+  /* overflow: none; */
+}
+
+.qual_container {
+    display: flex; /* Change to block elements */
+    flex-direction: column; /* Align children vertically */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 1000px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0;
+    padding-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid yellow; */
+  }
+  /* border: 1px solid yellow; */
+
+
+
+.qual_iconContainer {
+  /* border: 1px solid pink; */
+  position: relative;
+  margin-bottom: 5rem;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  /* max-width: 33em; */
+
+}
+
+.qual_icon {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: 2.5rem;
+
+}
+
+.qual_iconContainer>h1 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  .qual_iconContainer>h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.qual_iconContainer>p {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  line-height: 1.625;
+}
+
+@media (min-width: 1024px) {
+  .qual_iconContainer>p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .qual_iconContainer>p {
+    width: 50%;
+  }
+}
+
+.qual_certContainer {
+    -ms-overflow-style: none; /* for Internet Explorer and Edge */
+    scrollbar-width: none; /* for Firefox */
+    flex-wrap: nowrap; /* prevent wrapping of elements */
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;
+    width: min-content;
+    height: max-content;
+    overflow:visible;
+    /* border: 1px solid red; */
+  
+}
+.qual_certContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.qual_certInner {
+  display: flex;
+  flex-direction: column;
+  /* Added */
+  padding: 0;
+  /* background-color: #1F2937; */
+  border-radius: 0.25rem;
+  width: 680px;
+  overflow: none;
+  max-width: 700px;
+  /* border: 1px solid cyan; */
+  overflow: none;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  /* padding-left: 1em;
+    padding-right: 1em; */
+
+}
+
+.qual_certificate {
+  box-sizing: border-box;
+  object-fit: cover;
+  position: absolute;
+  padding: 2em;
+  width: 700px;
+  height: auto;
+  border: 0;
+
+  overflow: hidden;
+  object-fit: contain;
+
+}
+
+@media (min-width: 768px) {
+  .qual_certInner {
+    scale: 1;
+  }
+
+  .qual_certContainer {
+    scale: 1
+  }
+
+  .qual_certificate {
+    scale: 1;
+  }
+
+  .qual_iframeContainer {
+    scale: 1;
+  }
+}
+
+.qual_iframeContainer {
+  margin-top: 300px;
+  box-sizing: border-box;
+  display: flex;
+  user-select: none;
+  align-items: normal;
+  justify-content: stretch;
+  position: absolute;
+  padding-bottom: 75%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: 680px;
+  /* border: 4px solid blue; */
+  height: 75%;
+}
+
+.qual_iframeContainer>iframe {
+  height: 120%;
+
+}
+
+
+
+
+.qual_modal {
+  border: 1px solid #4B5563;
+  background-color: #1F2937;
+  color: #F3F4F6;
+  padding: 12px 24px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px; 
+  transition-duration: 0.4s; 
+  cursor: pointer;
+  width: auto; 
+  height: auto; 
+  border-radius: 4px; 
+}
+
+@media (max-width: 640px) {
+  .qual_iframeContainer {
+    display: none;
+  }
+  .qual_modal {
+    display: inline-block;
+  }
+  .qual_container {
+    height: 600px;
+  }
+  #qual_section {
+    height: 600px !important;
+  }
+}
+
+.qual_modal:hover {
+  background-color: #4B5563; 
+  color: #F3F4F6; 
+  border: 1px solid #1F2937; 
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+.modal_content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 75%;
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal_img {
+  width: 100%;
+  height: auto;
+}

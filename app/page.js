@@ -1,3 +1,5 @@
+"use client";
+
 import './globals.css'
 import React from "react";
 import About from "./components/About/About";
@@ -16,10 +18,10 @@ export default function App() {
       <Navbar />
       <About />
        <Projects />
-      {/*<Qualification />
+      <Qualification />
       <Skills />
-      <Testimonials />
-      <Contact /> */} 
+      {/* <Testimonials />
+      <Contact />  */}
     </main>
   );
 }

@@ -1,5 +1,4 @@
-// src/components/Projects.js
-
+"use client";
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../../data";

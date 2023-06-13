@@ -1,0 +1,125 @@
+#skills_section {
+    background-color: #111827;
+    color: #9CA3AF;
+    height: 1200px;
+    /* overflow: none; */
+}
+
+.skills_container {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.skills_iconContainer {
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.skills_icon {
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 2.5rem;
+}
+
+.skills_container>h1 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 500;
+}
+
+@media (min-width: 640px) {
+    .skills_container>h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+.skills_container>p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    line-height: 1.625;
+}
+
+@media (min-width: 1024px) {
+    .skills_container>p {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .skills_container>p {
+        width: 50%;
+    }
+}
+
+.skills_gallery {
+    display: flex;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 640px) {
+
+    .skills_gallery {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .skills_gallery {
+        width: 80%;
+    }
+}
+
+.skills_check {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .skills_check {
+        width: 50%;
+    }
+}
+
+.skills_checkInner {
+    display: flex;
+    padding: 1rem;
+    background-color: #1F2937;
+    align-items: center;
+    height: 100%;
+    border-radius: 0.25rem;
+}
+
+.skills_checkIcon {
+    margin-right: 1rem;
+    color: #34D399;
+    flex-shrink: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .skills_check {
+        width: 50%;
+        min-width: 180px;
+    }
+.skills_gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
