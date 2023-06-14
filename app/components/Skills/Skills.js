@@ -22,7 +22,7 @@ export default function Skills() {
             <div key={skill} className={styles.skills_check}>
               <div className={styles.skills_checkInner}>
                 <BadgeCheckIcon className={styles.skills_checkIcon} />
-                <span className="title-font font-medium text-white">
+                <span className={styles.skills_skillList}>
                   {skill}
                 </span>
               </div>

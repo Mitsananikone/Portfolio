@@ -11,7 +11,7 @@ export default function Projects() {
                 <div className={styles.projects_iconContainer}>
                     <CodeIcon className={styles.projects_icon} />
                     <h1>
-                        Apps I've Built
+                       Projects
                     </h1>
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo

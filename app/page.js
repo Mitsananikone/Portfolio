@@ -20,8 +20,8 @@ export default function App() {
        <Projects />
       <Qualification />
       <Skills />
-      {/* <Testimonials />
-      <Contact />  */}
+      <Testimonials />
+      {/* <Contact />  */}
     </main>
   );
 }

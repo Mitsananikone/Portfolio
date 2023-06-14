@@ -38,9 +38,10 @@
     margin-right: auto;
     margin-bottom: 1rem;
     width: 2.5rem;
+    color: white;
 }
 
-.projects_container>h1 {
+.projects_iconContainer>h1 {
     margin-bottom: 1rem;
     color: #ffffff;
     font-size: 1.875rem;
