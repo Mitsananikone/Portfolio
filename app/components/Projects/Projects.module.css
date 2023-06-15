@@ -2,6 +2,7 @@
     padding-top: 100px;
     background-color: #111827;
     color: #9CA3AF;
+    max-height:fit-content;
 }
 
 .projects_container {
@@ -66,6 +67,13 @@
 
 @media (min-width: 1024px) {
     .projects_container>p {
+        width: 33%;
+    }
+}
+
+@media (max-width: 440px) {
+    .projects_container>p {
+        margin-top: 200px;
         width: 33%;
     }
 }
@@ -185,19 +193,15 @@
 }
 
 @media (max-width: 400px) {
-
     .projects_projectBoxContainer {
         width: 100%;
     }
-
     .projects_gallery {
-        width: 90%;
+        width: 80%;
     }
-
     .imgBox {
         width: 100%;
     }
-
     .break {
         /* display: none; */
     }
@@ -232,4 +236,10 @@
 
 .projects_gallery>a {
     width: 400px;
+}
+
+.projects_screenWidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

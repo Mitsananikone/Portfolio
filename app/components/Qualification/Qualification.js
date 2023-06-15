@@ -23,12 +23,12 @@ export default function Qualification() {
     return (
         <section id={styles.qual_section}>
             <div className={styles.qual_container}>
-                <div className={styles.qual_iconContainer}>
+                <div className={styles.qual_iconContainer} >
                     <AcademicCapIcon className={styles.qual_icon} />
                     <h1>
                         Qualification
                     </h1>
-                    <p>
+                    <p >
                         I am proud to hold a Fullstack Developer Professional Certificate from Massachusetts Institute of Technology, one of the world's most prestigious universities. This rigorous program equipped me with the skills and knowledge needed to develop fullstack web applications using modern technologies and best practices. I am excited to apply these skills to create innovative and impactful solutions for clients and users
                     </p>
                 </div>

@@ -146,3 +146,9 @@
     background-color: #111827;
     color: #9CA3AF;
 }
+
+.about_screenWidth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

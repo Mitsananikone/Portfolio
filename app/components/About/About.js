@@ -1,28 +1,46 @@
-"use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from './About.module.css';
 
 export default function About() {
+  const [screenWidth, setScreenWidth] = useState(0);
+
+  useEffect(() => {
+    // Update the screen width on component mount and window resize
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", updateScreenWidth);
+    updateScreenWidth();
+
+    return () => {
+      // Clean up the event listener on component unmount
+      window.removeEventListener("resize", updateScreenWidth);
+    };
+  }, []);
+
   return (
     <section id={styles.about_section}>
       <div className={styles.about_container}>
         <div className={styles.about_infotext}>
           <h1 className={styles.about_title}>
-            Hi, I'm Mit! <br/>
+            Hi, I'm Mit! <br />
             <br className={styles.about_break} /> I have a passion for using technology to solve real-world problems and improve people's lives.
           </h1>
           <p className={styles.about_info}>
-          I love creating apps that can be used in everyday life. Whether it's a productivity tool, a game, or a social media platform, I enjoy exploring new ideas and pushing the boundaries of what's possible with technology.
+            I love creating apps that can be used in everyday life. Whether it's a productivity tool, a game, or a social media platform, I enjoy exploring new ideas and pushing the boundaries of what's possible with technology.
           </p>
           <div className={styles.about_contactme}>
             <a
               href="#contact"
-              className={styles.about_contact}>
+              className={styles.about_contact}
+            >
               Work With Me
             </a>
             <a
               href="#projects"
-              className={styles.about_projects}>
+              className={styles.about_projects}
+            >
               See My Past Work
             </a>
           </div>
@@ -35,6 +53,7 @@ export default function About() {
           />
         </div>
       </div>
+
     </section>
   );
 }
