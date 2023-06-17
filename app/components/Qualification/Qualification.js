@@ -12,13 +12,6 @@ export default function Qualification() {
     const closeModal = () => {
       setModalOpen(false);
     };
-    // useEffect(() => {
-    //     const image = document.getElementById('certificate');
-    //     if (image) {
-    //       image.style.display = 'inline'; // Or any other display style you want
-    //       image.style.userSelect = 'auto'; // Or any other user-select style you want
-    //     }
-    //   }, []);
 
     return (
         <section id={styles.qual_section}>

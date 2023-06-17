@@ -1,0 +1,420 @@
+#testi_section {
+    background-color: #111827;
+    color: #9CA3AF;
+    height: 100vw;
+    max-height: 2000px;
+    overflow: hidden;
+}
+
+.testi_clients {
+    align-items: center;
+    background-color: #1F2937;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 1rem;
+    max-width: 30%;
+    padding: 2rem;
+    width: max-content;
+    z-index: 999;
+    overflow:visible;
+}
+
+@media screen and  (max-width: 320px) {
+    #testi_section {
+        height: auto;
+        max-height: none;
+    }
+
+    .testi_clients {
+        margin: 0.5rem;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .testi_clientsIcon {
+        margin-bottom: 0.5rem;
+        width: 2rem;
+    }
+
+    .testi_clientsIcon>p {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        font-size: smaller;
+        height: 100%;
+        justify-content: center;
+        line-height: 1.625;
+        margin-bottom: 1.5rem;
+        padding: 1em;
+        width: 60%;
+        word-wrap: break-word;
+    }
+
+    .testi_container {
+        align-items: center;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .testi_gallery {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .testi_iconContainer {
+        color: white;
+    }
+
+    .testi_iconContainer>h1 {
+        color: white;
+        display: inline;
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .testi_image {
+        border-radius: 9999px;
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: center;
+        width: 3rem;
+    }
+
+    .testi_name {
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    .testi_nameContainer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-left: 1rem;
+    }
+
+    .testi_portrait {
+        align-items: center;
+        display: inline-flex;
+        margin-top: 1em;
+    }
+}
+
+@media screen and  (max-width: 440px) {
+    #testi_section {
+        height: auto;
+        max-height: none;
+    }
+
+    .testi_clients {
+        margin: 0.5rem;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .testi_clientsIcon {
+        margin-bottom: 0.5rem;
+        width: 2rem;
+    }
+
+    .testi_clientsIcon>p {
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        font-size: smaller;
+        height: 100%;
+        justify-content: center;
+        line-height: 1.625;
+        margin-bottom: 1.5rem;
+        padding: 1em;
+        width: 60%;
+        word-wrap: break-word;
+    }
+
+    .testi_container {
+        align-items: center;
+        display: flex-box;
+        height: 1000em;;
+        overflow: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5em;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .testi_gallery {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+        margin: 0.5rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        overflow: visible;
+    }
+
+    .testi_iconContainer {
+        color: white;
+    }
+
+    .testi_iconContainer>h1 {
+        color: white;
+        display: inline;
+        font-size: 1.875rem;
+        font-weight: 500;
+        line-height: 2.25rem;
+        margin-bottom: 3rem;
+    }
+
+    .testi_image {
+        border-radius: 9999px;
+        flex-shrink: 0;
+        object-fit: cover;
+        object-position: center;
+        width: 3rem;
+    }
+
+    .testi_name {
+        color: #ffffff;
+        font-weight: 500;
+    }
+
+    .testi_nameContainer {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding-left: 1rem;
+    }
+
+    .testi_portrait {
+        align-items: center;
+        display: inline-flex;
+        margin-top: 1em;
+    }
+}
+
+
+
+
+
+@media screen and  (max-width: 440px) {
+    .testi_container {
+        margin-top: 800px;
+    }
+
+    .testi_iconContainer {
+        /* border: 1px solid red; */
+        height: 100%;
+        max-height: 2000px;
+    }
+    .testi_gallery {
+        /* border: 1px solid red; */
+        height: auto;
+        overflow: visible;
+    }
+
+    .testi_container {
+        overflow: visible;
+    }
+}
+
+@media screen and  (min-width: 320px) {
+    .testi_gallery {
+        /* border: 1px solid red; */
+        height: auto;
+        overflow: visible;
+    }
+
+    .testi_container {
+        overflow: visible;
+    }
+}
+
+@media screen and  (max-width: 768px) {
+    #testi_section {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 1800px;
+    }
+    .testi_gallery {
+        /* border: 1px solid orange; */
+        height: 100%;
+        overflow: visible;
+    }
+
+    .testi_container {
+        overflow: visible;
+        width: 80%;
+        height: 1200px;
+    }
+ 
+
+    .testi_clients {
+        background-color: #1F2937;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 80%;
+        min-width: 300px;
+        min-width: auto;
+    }
+
+    .testi_gallery {
+        height: 1200px;
+        width: 100%;
+    }
+}
+
+@media screen and  (min-width: 1200px) {
+    .testi_clients {
+        height: auto;
+        max-width: 30%;
+    }
+    #testi_section {
+        height: 800px;
+    }
+}
+
+
+@media screen and  (max-width: 1000px) {
+    #testi_section {
+        width: 100%;
+        height: 1200px;
+    }
+
+    .testi_clients {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .testi_clients>p {
+        font-size: small;
+    }
+
+    .testi_gallery {
+        width: 55%;
+        height: fit-content;
+    }
+}
+
+.testi_clientsIcon {
+    color: white;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 0;
+    width: 3rem;
+}
+
+.testi_clientsIcon>p {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    font-size: small;
+    height: 100%;
+    justify-content: center;
+    line-height: 1.625;
+    margin-bottom: 1.5rem;
+    padding: 2em;
+    word-wrap: break-word;
+}
+
+.testi_container {
+    align-items: center;
+    display: flex-box;
+    height: max-content;
+    overflow: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.testi_container>svg {
+    color: white;
+    display: inline-block;
+    margin-bottom: 1rem;
+    width: 2.5rem;
+}
+
+.testi_gallery {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    justify-content: center;
+    margin: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testi_iconContainer {
+    color: white;
+}
+
+.testi_iconContainer>h1 {
+    color: white;
+    display: inline;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    margin-bottom: 3rem;
+}
+
+@media screen and  (max-width: 640px) {
+    .testi_gallery {
+        height: 100%;
+        /* border: 1px solid red; */
+        height: auto;
+        overflow: visible;
+        width: 100%;
+    }
+    .testi_container {
+        margin-top: 20em;
+        overflow: visible;
+    }
+    #testi_section {
+        /* border: 1px solid red; */
+        height: 2000px;
+    }
+}
+
+.testi_image {
+    border-radius: 9999px;
+    flex-shrink: 0;
+    object-fit: cover;
+    object-position: center;
+    width: 3rem;
+}
+
+.testi_name {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.testi_nameContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 1rem;
+}
+
+.testi_portrait {
+    align-items: center;
+    display: inline-flex;
+    margin-top: 1em;
+}

@@ -52,8 +52,8 @@ export default function Contact() {
                 Alvin, TX 77511
               </p>
             </div>
-            <div>
-            {/* <div className={styles.contact_contactInfo} > */}
+
+            <div className={styles.contact_emailPhone} >
               <h2>
                 EMAIL
               </h2>

@@ -1,4 +1,4 @@
-.main {
+/* .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,13 +8,17 @@
 }
 
 .page_screenWidth {
+  
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
+.SectionContainer {
+  border: 1px solid cyan;
+  overflow:none;
+}
+ */
 
 
 

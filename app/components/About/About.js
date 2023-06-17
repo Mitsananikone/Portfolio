@@ -2,22 +2,6 @@ import React, { useEffect, useState } from "react";
 import styles from './About.module.css';
 
 export default function About() {
-  const [screenWidth, setScreenWidth] = useState(0);
-
-  useEffect(() => {
-    // Update the screen width on component mount and window resize
-    const updateScreenWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", updateScreenWidth);
-    updateScreenWidth();
-
-    return () => {
-      // Clean up the event listener on component unmount
-      window.removeEventListener("resize", updateScreenWidth);
-    };
-  }, []);
 
   return (
     <section id={styles.about_section}>

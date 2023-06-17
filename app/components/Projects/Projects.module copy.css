@@ -1,3 +1,4 @@
+
 .projects_section {
     padding-top: 100px;
     background-color: #111827;
@@ -14,7 +15,15 @@
     padding-right: 1.25rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+
     text-align: center;
+}
+
+@media screen and  (min-width: 1024px) {
+    .projects_container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 .projects_iconContainer {
@@ -42,6 +51,13 @@
     font-weight: 500;
 }
 
+@media screen and  (min-width: 640px) {
+    .projects_container>h1 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
 .projects_container>p {
     margin-left: auto;
     margin-right: auto;
@@ -50,9 +66,27 @@
     line-height: 1.625;
 }
 
+@media screen and  (min-width: 1024px) {
+    .projects_container>p {
+        width: 33%;
+    }
+}
+
+@media screen and  (max-width: 440px) {
+    .projects_container>p {
+        margin-top: 200px;
+        width: 33%;
+    }
+}
+
 .projects_projectbox {
+    /* flex: 1 1 250px;  */
+    /* padding-left: auto;
+    padding-right: auto; */
     position: relative;
     display: flex;
+
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     padding-bottom: 60%;
@@ -73,6 +107,14 @@
     width: 100%;
     height: 100%;
     border-radius: 4px;
+
+}
+
+@media screen and  (max-width: 768px) {
+    .imgBox {
+        display: flex;
+        width: 100%;
+    }
 }
 
 .projects_projectBoxContainer {
@@ -85,13 +127,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border-width: 4px; */
+    border-width: 4px;
     border-color: #1F2937;
     padding: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
     margin: 0;
-    /* padding: 32px; */
+    padding: 32px;
+
+
 }
 
 .projects_projectbox:hover .projects_projectBoxContainer {
@@ -100,6 +144,7 @@
     border: 1px solid #34D399;
     border-radius: 4px;
     line-height: 1.5rem;
+
 }
 
 .projects_projectbox:hover .projects_projectBoxContainer>h1 {
@@ -121,7 +166,55 @@
     justify-content: space-around;
     flex-wrap: wrap;
     flex-direction: row;
+    /* border: 1px solid blue; */
     margin: 2em;
+}
+
+@media screen and  (max-width: 600px) {
+    .projects_container {
+    
+        display: flex;
+        font-size: small;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .projects_projectBoxContainer {
+        width: 80vw;
+        border: 1px solid green;
+      
+    }
+
+    .projects_gallery {
+        width: 80vw;
+    }
+
+    .imgBox {
+        width: 80vw;
+    }
+}
+
+@media screen and  (max-width: 400px) {
+    .projects_projectBoxContainer {
+        width: 100%;
+    }
+    .projects_gallery {
+        width: 80%;
+    }
+    .imgBox {
+        width: 100%;
+    }
+    .break {
+        /* display: none; */
+    }
+
+    .projects_projectBoxContainer>p {
+        display: none;
+    }
+    .projects_projectBoxContainer>h1 {
+        font-size: large;
+    }
 }
 
 .projects_gallery+h2 {
@@ -153,91 +246,3 @@
     align-items: center;
     justify-content: center;
 }
-
-@media screen and  (min-width: 320px) and (max-width: 480px) {
-    .projects_container>p {
-        margin-top: 200px;
-        width: 33%;
-    }
-    .projects_projectBoxContainer {
-        width: 100%;
-    }
-    .projects_gallery {
-        width: 80%;
-    }
-    .imgBox {
-        width: 100%;
-    }
-    .break {
-    }
-    .projects_projectBoxContainer>p {
-        display: none;
-    }
-    .projects_projectBoxContainer>h1 {
-        font-size: large;
-    }
-}
-
-@media screen and  (min-width: 481px) and (max-width: 768px) {
-    .projects_container {
-        display: flex;
-        font-size: small;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .projects_iconContainer {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-    }
-    .projects_iconContainer>p {
-        font-size: 16px;
-        width: 80%;
-    
-    }
-
-    .projects_projectBoxContainer {
-        width: 80vw;
-        border: 1px solid green;
-      
-    }
-
-    .projects_gallery {
-        width: 80vw;
-    }
-
-    .imgBox {
-        display: flex;
-        width: 80vw;
-    }
-}
-
-@media screen and  (min-width: 769px) and (max-width: 1024px) {
-    .projects_container {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-
-    .projects_container>h1 {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-    }
-
-    .projects_container>p {
-        width: 33%;
-    }
-}
-
-@media screen and  (min-width: 1025px) and (max-width: 1200px) {
-    /* The styles here will apply for Desktops and large screens. You can place the required CSS here */
-}
-
-@media screen and (min-width: 1201px) {
-    .projects_projectBoxContainer {
-        width: 400px;
-    }
-    /* The styles here will apply for Extra large screens, TVs. You can place the required CSS here */
-}
-

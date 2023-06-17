@@ -13,68 +13,54 @@ import Qualification from "./components/Qualification/Qualification";
 
 
 export default function App() {
-  const [screenWidth, setScreenWidth] = useState(0);
-
-  useEffect(() => {
-    // Update the screen width on component mount and window resize
-    const updateScreenWidth = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", updateScreenWidth);
-    updateScreenWidth();
-
-    return () => {
-      // Clean up the event listener on component unmount
-      window.removeEventListener("resize", updateScreenWidth);
-    };
-  }, []);
+  
 
   return (
 
-    <main styles={{ border: '1px solid green' }}>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <Navbar />
-      </div>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <About />
-      </div>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <Projects />
-      </div>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <Qualification />
-      </div>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <Skills />
-      </div>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <Testimonials />
-      </div>
-      <div className="colorBorder">
-      <div className={styles.page_screenWidth}>
-        Screen Width: {screenWidth}px
-      </div>
-        <Contact />
-      </div>
-    </main>
+    <main>
+
+      <Navbar />
+
+      <About />
+
+      <Projects />
+
+
+      <Qualification />
+
+       <Skills />
+
+    <Testimonials />
+
+      
+        {/*<Contact /> */}
+  </main> 
+   
   );
 }
+
+
+
+  //   <main styles={{ height: '100vh' }}>
+  //   <div className={styles.SectionContainer}>
+  //     <Navbar />
+  //   </div>
+  //   <div className={styles.SectionContainer}>
+  //     <About />
+  //   </div>
+  //   <div className={styles.SectionContainer}>
+  //     <Projects />
+  //   </div>
+  //   <div className={styles.SectionContainer}>
+  //     <Qualification />
+  //   </div>
+  //   <div className={styles.SectionContainer}>
+  //     <Skills />
+  //   </div>
+  //   <div className={styles.SectionContainer}>
+  //     <Testimonials />
+  //   </div>
+  //   <div className={styles.SectionContainer}>
+  //     <Contact />
+  //   </div>
+  // </main>

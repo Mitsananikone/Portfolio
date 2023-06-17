@@ -9,15 +9,15 @@ export default function Testimonials() {
   return (
     <section id={styles.testi_section}>
       <div className={styles.testi_container}>
-        <UsersIcon className={styles.iconContainer} />
+        <UsersIcon className={styles.testi_iconContainer} />
         <h1>
           Client Testimonials
         </h1>
         <div className={styles.testi_gallery}>
           {testimonials.map(({quote, image, name, company}) => (
             <div className={styles.testi_clients}>
-              <div className={styles.testi_clientsIcon}>
-                <TerminalIcon className={styles.testi_clientsIcon} />
+              <div className={styles.testi_clientsIconContainer}>
+                <TerminalIcon className={styles.testi_clientsIcon}/>
                 </div>
                 <p >{quote}</p>
                 <div className={styles.testi_portrait}>

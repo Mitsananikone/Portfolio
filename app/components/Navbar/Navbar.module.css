@@ -4,7 +4,7 @@
     background-color: #1F2937;
 }
 
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
     .navbar_header {
         position: sticky;
     }
@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
     .navbar_container {
         flex-direction: row;
     }
@@ -33,7 +33,7 @@
     font-weight: 500;
 }
 
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
     .navbar_title {
         margin-bottom: 0;
     }
@@ -54,7 +54,7 @@
     align-items: center;
 }
 
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
     .navbar_nav {
         padding-top: 0.25rem;
         padding-bottom: 0.25rem;
@@ -92,7 +92,7 @@
     background-color: #374151;
 }
 
-@media (min-width: 768px) {
+@media screen and  (min-width: 768px) {
     .navbar_hireMe {
         margin-top: 0;
     }
