@@ -106,28 +106,8 @@ a {
     color-scheme: dark;
   }
 }
-/* }
 
-p {
-  color: #9CA3AF;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  line-height: 1.625;
-}
 
-h1 {
-  margin-bottom: 1rem;
-  color: #ffffff;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 500;
-} */
-
-.icon_container {
-  color: red;
-}
 
 .colorBorder {
   position: fixed;
@@ -137,8 +117,14 @@ h1 {
   z-index: 9999;
 }
 
+@media screen and (max-width: 320px) {
+  html {
+    width: 100%;
+  }
+}
+
 /* Mobile devices */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
   .colorBorder{
     box-sizing: border-box;
     font-size: xx-large;

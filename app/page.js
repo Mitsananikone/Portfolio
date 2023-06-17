@@ -13,7 +13,7 @@ import Qualification from "./components/Qualification/Qualification";
 
 
 export default function App() {
-  
+
 
   return (
 
@@ -25,17 +25,15 @@ export default function App() {
 
       <Projects />
 
-
       <Qualification />
 
-       <Skills />
+      <Skills />
 
-    <Testimonials />
+      <Testimonials />
 
-      
-        {/*<Contact /> */}
-  </main> 
-   
+      <Contact />
+    </main>
+
   );
 }
 

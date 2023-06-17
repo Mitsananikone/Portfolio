@@ -160,6 +160,7 @@
   width: 100%;
   height: 100%;
   overflow: auto;
+  border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -168,7 +169,7 @@
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 75%;
+  width: 100%;
   position: relative;
 }
 
@@ -189,6 +190,17 @@
 .modal_img {
   width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 320px) {
+  .qual_iconContainer {
+    margin-top: 500px;
+  }
+  .qual_iframeContainer {
+    display: none;
+    min-width: 280px;
+  }
+
 }
 
 @media screen and  (min-width: 320px) and (max-width: 480px) {
@@ -260,10 +272,7 @@
 }
 
 @media screen and (min-width: 1201px) {
-  /* .qual_certificate {
-    margin-top: 400px;
-    margin-bottom: 200px;
-  } */
+
   .qual_iconContainer {
     margin-top: 500px;
   }

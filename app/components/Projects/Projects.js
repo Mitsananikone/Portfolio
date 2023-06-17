@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { projects } from "../../data";
 import styles from "./Projects.module.css";
 
+
 export default function Projects() {
     const [screenWidth, setScreenWidth] = useState(0);
 
@@ -27,6 +28,7 @@ export default function Projects() {
             <div className={styles.projects_container}>
                 <div className={styles.projects_iconContainer}>
                     <CodeIcon className={styles.projects_icon} />
+                    
                     <h1>
                         Projects
                     </h1>
@@ -43,9 +45,6 @@ export default function Projects() {
                             key={project.image}
                         >
                             <div className={styles.projects_projectbox}>
-
-
-
                                 <img alt="gallery" src={project.image} className={styles.imgBox} />
 
                                 <div className={styles.projects_projectBoxContainer}>

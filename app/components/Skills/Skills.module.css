@@ -99,13 +99,27 @@
     font-weight: 500; 
 }
 
+@media screen and (max-width: 320px) {
+    .skills_iconContainer {
+        margin-top: 100px;
+    }
+    .skills_gallery {
+        flex-direction: column;
+        width: 80%;
+    }
+    .skills_check {
+        width: 100%;
+    }
+
+  }
+
 /* Mobile devices */
 @media screen and (min-width: 320px) and (max-width: 480px) {
     .skills_iconContainer {
         margin-top: 100px;
     }
     .skills_gallery {
-        flex-direction: column;;
+        flex-direction: column;
         width: 80%;
     }
     .skills_check {

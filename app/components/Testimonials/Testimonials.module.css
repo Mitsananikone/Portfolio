@@ -18,7 +18,7 @@
     margin: 1rem;
     padding: 2rem;
     width: max-content;
-    max-width: 30%;
+    max-width: 100%;
     height: auto;
     z-index: 999;
     overflow: visible;
@@ -31,8 +31,6 @@
     justify-content: center;
     width: 100%;
     height: max-content;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
     padding-bottom: 2.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -76,7 +74,7 @@
     margin: 0.5rem;
     overflow: visible;
     height: 1200px;
-    width: 55%;
+    width: 100%;
 }
 
 .testi_portrait {
@@ -112,7 +110,7 @@
 
 
 
-.testi_iconContainer>h1 {
+.testi_container>h2 {
     color: white;
     display: inline;
     font-size: 1.875rem;
@@ -128,8 +126,31 @@
     padding-left: 1rem;
 }
 
+@media screen and (max-width: 320px) {
+    .testi_container {
+        /* border: 1px solid red; */
+
+        
+    }
+    .testi_gallery{
+        margin-top: -100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 200px;
+        /* border: 4px solid blue; */
+
+    }
+    .testi_clients {
+       
+     width:80%;
+    }
+}
+
 /* Mobile devices */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 321px) and (max-width: 480px) {
     .testi_clients {
         max-width: 80%;
         min-width: 300px;
@@ -175,7 +196,7 @@
     }
 
     .testi_clients {
-        max-width: 100%;
+        max-width: 40%;
         height: auto;
     }
 }
