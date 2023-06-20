@@ -90,7 +90,9 @@
 }
 
 @media screen and (max-width: 320px) {
-    
+    .about_container {
+        padding: 2em 0;
+    }
 }
 
 /* blue */

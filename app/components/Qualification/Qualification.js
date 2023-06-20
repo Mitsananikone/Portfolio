@@ -14,7 +14,7 @@ export default function Qualification() {
     };
 
     return (
-        <section id={styles.qual_section}>
+        <section id="qualification" className={styles.qual_section}>
             <div className={styles.qual_container}>
                 <div className={styles.qual_iconContainer} >
                     <AcademicCapIcon className={styles.qual_icon} />

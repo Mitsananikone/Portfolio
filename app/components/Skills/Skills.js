@@ -6,7 +6,7 @@ import styles from './Skills.module.css';
 
 export default function Skills() {
   return (
-    <section id={styles.skills_section}>
+    <section id="skills" className={styles.skills_section}>
       <div className={styles.skills_container}>
         <div className={styles.skills_iconContainer}>
           <ChipIcon className={styles.skills_icon} />

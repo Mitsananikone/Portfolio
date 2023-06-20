@@ -1,4 +1,4 @@
-#skills_section {
+.skills_section {
     background-color: #111827;
     color: #9CA3AF;
     height: 1000px;
@@ -179,7 +179,7 @@
 /* Extra large screens, TV */
 @media screen and (min-width: 1201px) {
     .skills_iconContainer {
-        margin-top: 200px;
+        margin-top: 400px;
     }
     .skills_container>p {
         width: 50%;

@@ -1,7 +1,9 @@
-#contact_section {
+.contact_section {
+    margin-top: 30vh;
     position: relative;
     background-color: #111827;
     color: #9CA3AF;
+    margin-bottom: 20vh;
 
 }
 
@@ -97,9 +99,10 @@
     font-weight: 500;
 }
 
+
 .contact_inputName,
 .contact_inputEmail,
-.contact_msgInput {
+.contact_inputMsg {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     padding-left: 0.75rem;
@@ -119,7 +122,7 @@
     outline: 0;
 }
 
-.contact_msgInput {
+.contact_inputMsg {
     height: 8rem;
     line-height: 1.5rem;
     resize: none;
@@ -144,7 +147,7 @@
 
 .contact_signature {
     font-size: x-large;
-    margin-right: -150px;
+    text-align: left;
     color: #10B981;
 }
 
@@ -174,14 +177,19 @@
     }
 
     .contact_contactInfo {
-        top: auto;
-        left: auto;
-        bottom: 0;
-        right: 0;
-        margin-left: 0;
-        width: 300px;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         height: auto;
         opacity: 0.6;
+    }
+
+    .contact_inputName,
+    .contact_inputEmail,
+    .contact_inputMsg,
+    .contact_signature {
+        margin-bottom: 2em;
     }
 }
 
@@ -230,6 +238,30 @@
         width: 300px;
         height: auto;
         opacity: 0.6;
+
+    }
+
+    .contact_inputName {
+        margin-bottom: 1em;
+        height: auto;
+        width: 82vw;
+        margin-left: 1em;
+    }
+
+    .contact_inputEmail {
+        margin-bottom: 1.5em;
+        width: 82vw;
+        margin-left: 1.25em;
+    }
+
+    .contact_msgInput {
+        margin-bottom: 1em;
+        width: 82vw;
+        margin-left: 1em;
+    }
+
+    .contact_msgLabel {
+        vertical-align: left;
     }
 }
 
@@ -279,76 +311,114 @@
         height: auto;
         opacity: 0.6;
     }
+
+    .contact_inputName {
+        margin-bottom: 1em;
+        height: auto;
+        width: 82vw;
+        margin-left: 1em;
+    }
+
+    .contact_inputEmail {
+        margin-bottom: 1.5em;
+        width: 82vw;
+        margin-left: 1.25em;
+    }
+
+    .contact_msgInput {
+        margin-bottom: 1em;
+        width: 78.5vw;
+        margin-left: 1em;
+    }
+
+    .contact_msgLabel {
+        vertical-align: top;
+    }
+
 }
 
 /* Small screens, laptops */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #contact_section {
         display: inline-flex;
-        flex-direction: column; /* changed from row to column */
-        align-items: center; /* align items to the center */
+        flex-direction: column;
+        /* changed from row to column */
+        align-items: center;
+        /* align items to the center */
         margin-top: 400px;
     }
 
     .contact_container {
         display: flex;
-        flex-direction: column; /* changed to column */
-        align-items: center; /* align items to the center */
+        flex-direction: column;
+        /* changed to column */
+        align-items: center;
+        /* align items to the center */
         width: 100%;
     }
 
     .flexContainer {
         display: flex;
-        justify-content: space-between; /* This will align the map and contact info side-by-side */
+        justify-content: space-between;
+        /* This will align the map and contact info side-by-side */
         flex-wrap: nowrap;
         width: 80%;
     }
 
     .contact_map, .contact_info {
-        flex: 1; /* This will allow them to take equal width */
+        flex: 1;
+        /* This will allow them to take equal width */
         height: auto;
     }
 
     .contact_form {
         margin-bottom: 0;
-        width: 40%;;
+        width: 40%;
+        ;
     }
 }
 
 
 /* Desktops, large screens */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-        #contact_section {
-            display: inline-flex;
-            flex-direction: column; /* changed from row to column */
-            align-items: center; /* align items to the center */
-            margin-top: 400px;
-        }
-    
-        .contact_container {
-            display: flex;
-            flex-direction: column; /* changed to column */
-            align-items: center; /* align items to the center */
-            width: 100%;
-        }
-    
-        .flexContainer {
-            display: flex;
-            justify-content: space-between; /* This will align the map and contact info side-by-side */
-            flex-wrap: nowrap;
-            width: 80%;
-        }
-    
-        .contact_map, .contact_info {
-            flex: 1; /* This will allow them to take equal width */
-            height: auto;
-        }
-    
-        .contact_form {
-            margin-bottom: 0;
-            width: 40%;;
-        }
+    #contact_section {
+        display: inline-flex;
+        flex-direction: column;
+        /* changed from row to column */
+        align-items: center;
+        /* align items to the center */
+        margin-top: 400px;
     }
+
+    .contact_container {
+        display: flex;
+        flex-direction: column;
+        /* changed to column */
+        align-items: center;
+        /* align items to the center */
+        width: 100%;
+    }
+
+    .flexContainer {
+        display: flex;
+        justify-content: space-between;
+        /* This will align the map and contact info side-by-side */
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+
+    .contact_map, .contact_info {
+        flex: 1;
+        /* This will allow them to take equal width */
+        height: auto;
+    }
+
+    .contact_form {
+        margin-bottom: 0;
+        width: 40%;
+        ;
+    }
+}
 
 /* Extra large screens, TV */
 @media screen and (min-width: 1201px) {
@@ -361,34 +431,42 @@
     .contact_form {
         width: 50%;
     }
+
     #contact_section {
         display: inline-flex;
-        flex-direction: column; /* changed from row to column */
-        align-items: center; /* align items to the center */
+        flex-direction: column;
+        /* changed from row to column */
+        align-items: center;
+        /* align items to the center */
         margin-top: 400px;
     }
 
     .contact_container {
         display: flex;
-        flex-direction: column; /* changed to column */
-        align-items: center; /* align items to the center */
+        flex-direction: column;
+        /* changed to column */
+        align-items: center;
+        /* align items to the center */
         width: 100%;
     }
 
     .flexContainer {
         display: flex;
-        justify-content: space-between; /* This will align the map and contact info side-by-side */
+        justify-content: space-between;
+        /* This will align the map and contact info side-by-side */
         flex-wrap: nowrap;
         width: 80%;
     }
 
     .contact_map, .contact_info {
-        flex: 1; /* This will allow them to take equal width */
+        flex: 1;
+        /* This will allow them to take equal width */
         height: auto;
     }
 
     .contact_form {
         margin-bottom: 0;
-        width: 40%;;
+        width: 40%;
+        ;
     }
 }

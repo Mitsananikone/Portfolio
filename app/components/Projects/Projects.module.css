@@ -1,8 +1,8 @@
 .projects_section {
-    padding-top: 100px;
+    padding-top: 20vh;
     background-color: #111827;
     color: #9CA3AF;
-    max-height:fit-content;
+    padding-bottom: 40vh;
 }
 
 .projects_container {
@@ -19,10 +19,9 @@
 
 .projects_iconContainer {
     display: flex;
-    margin-bottom: 5rem;
     flex-direction: column;
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 2em;
 }
 
 .projects_icon {
@@ -46,83 +45,27 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 1rem;
-    line-height: 1.5rem;
     line-height: 1.625;
 }
 
-.projects_projectbox {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 60%;
-    margin: 2em;
-}
-
-.projects_container>img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.imgBox {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 4px;
-}
-
-.projects_projectBoxContainer {
-    position: absolute;
-    z-index: 10;
-    background-color: rgba(17, 24, 39, 0.9);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border-width: 4px; */
-    border-color: #1F2937;
-    padding: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    margin: 0;
-    /* padding: 32px; */
-}
-
-.projects_projectbox:hover .projects_projectBoxContainer {
-    opacity: 1;
-    color: white;
-    border: 1px solid #34D399;
-    border-radius: 4px;
-    line-height: 1.5rem;
-}
-
-.projects_projectbox:hover .projects_projectBoxContainer>h1 {
-    font-weight: 300;
-    color: #34D399;
-}
-
-.projects_projectbox:hover .projects_projectBoxContainer>h2 {
-    font-weight: 800;
-    color: #34D399;
-}
-
-.projects_projectbox:hover .projects_projectBoxContainer>p {
-    font-weight: 200;
-}
-
 .projects_gallery {
+    box-sizing: border-box;
+    /* border: 1px solid white; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
-    /* margin: 2em; */
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 3em;
+    margin-right: 3em;
 }
+
+.projects_galleryInner {}
+
+
 
 .projects_gallery+h2 {
     margin-bottom: 0.25rem;
@@ -145,71 +88,192 @@
 }
 
 .projects_gallery>a {
+    margin-top: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 400px;
+    height: calc(400px * 0.75);
+
 }
 
-.projects_screenWidth {
-    display: flex;
-    align-items: center;
+.projects_projectbox {
+    position: relative;
+    display: inline-flex;
+    align-items: bottom;
     justify-content: center;
+    padding: 0;
+    margin: 0;
+    max-width: 400px;
+    width: 40vw;
+    height: calc(400px * 0.75);
 }
+
+.imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(400px * 0.75);
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.projects_projectBoxContainer {
+    /* border: 1px solid orange; */
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(17, 24, 39, 0.9);
+    width: 400px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: #1F2937;
+    padding: 2em;
+    opacity: 0;
+    margin: 0;
+    transition: opacity 0.3s ease;
+    max-width: 400px;
+    margin-bottom: 0;
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer {
+    opacity: 1;
+    border: 1px solid #34D399;
+    border-radius: 4px;
+    width: 400px;
+    height: calc(400px * 0.75);
+    max-width: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer>h1 {
+    font-weight: 300;
+    color: #34D399;
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer>h2 {
+    font-weight: 800;
+    color: #34D399;
+}
+
+.projects_projectbox:hover .projects_projectBoxContainer>p {
+    font-weight: 500;
+}
+
+
+
 
 @media screen and (max-width: 320px) {
+    .projects_section {
+        padding-bottom: 0;
+    }
+
+    .projects_container {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .projects_gallery {
+        border-radius: 0;
+        height: auto;
+    }
+
+    .projects_galleryInner {
+        border-radius: 0;
+        margin-top: 5em;
+
+    }
+
+    .projects_gallery>a {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        /* border: 1px solid cyan; */
+    }
+
+    .projects_projectbox {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .imgBox {
+        border-radius: 0;
+        margin: 0;
+        width: 100vw;
+        border: 1px solid #6366F1;
+    }
+
     .projects_projectBoxContainer {
-        flex-direction: column;
-        justify-content: center;
+        border-radius: 0;
         align-items: center;
-        /* border-width: 4px; */
         border-color: #1F2937;
         padding: 0;
         opacity: 0;
         transition: opacity 0.3s ease;
         margin: 0;
-        /* padding: 32px; */
     }
-    
+
     .projects_projectbox:hover .projects_projectBoxContainer {
+        padding: 2em;
+        border-radius: 0;
+        opacity: 1;
+        color: white;
+        border: 1px solid #34D399;
+        line-height: 1.5rem;
+    }
+
+    .projects_projectBoxContainer>h1 {
+        font-weight: 300;
+        color: #34D399;
+    }
+
+    .projects_projectBoxContainer>h2 {
+        /* display: none; */
+    }
+
+    .projects_projectBoxContainer>p {
+        /* display: none; */
+    }
+
+}
+
+/*
+
+
+
+@media screen and  (min-width: 320px) and (max-width: 480px) {
+    .projects_container {
+        border: 3px solid blue;
+    }
+    .projects_container>p {
+        margin-top: 200px;
+        width: 33%;
+    }
+    .projects_projectbox:hover .projects_projectBoxContainer{
         opacity: 1;
         color: white;
         border: 1px solid #34D399;
         border-radius: 4px;
         line-height: 1.5rem;
+        width: 40vw;
     }
-    
-    .projects_projectbox:hover .projects_projectBoxContainer>h1 {
-        font-weight: 300;
-        color: #34D399;
-    }
-    
-    .projects_projectbox:hover .projects_projectBoxContainer>h2 {
-        display: none;
-    }
-    
-    .projects_projectbox:hover .projects_projectBoxContainer>p {
-        display: none;
-    }
-   
-}
 
-
-
-
-@media screen and  (min-width: 320px) and (max-width: 480px) {
-    .projects_container>p {
-        margin-top: 200px;
-        width: 33%;
-    }
-    .projects_projectBoxContainer {
-        width: 100%;
-    }
-    .projects_gallery {
-        width: 80%;
-    }
-    .imgBox {
-        width: 100%;
-    }
-    .break {
-    }
     .projects_projectBoxContainer>p {
         display: none;
     }
@@ -220,64 +284,144 @@
 
 @media screen and  (min-width: 481px) and (max-width: 768px) {
     .projects_container {
-        display: flex;
-        font-size: small;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        border: 3px solid green;
+    }
+    .projects_container>p {
+        margin-top: 200px;
+        width: 33%;
+    }
+    .projects_projectbox:hover .projects_projectBoxContainer{
+        opacity: 1;
+        color: white;
+        border: 1px solid #34D399;
+        border-radius: 4px;
+        line-height: 1.5rem;
+        width: 40vw;
     }
 
-    .projects_iconContainer {
-       display: flex;
-       align-items: center;
-       justify-content: center;
+    .projects_projectBoxContainer>p {
+        display: none;
     }
-    .projects_iconContainer>p {
-        font-size: 16px;
-        width: 80%;
-    
-    }
-
-    .projects_projectBoxContainer {
-        width: 80vw;
-        border: 1px solid green;
-      
-    }
-
-    .projects_gallery {
-        width: 80vw;
-    }
-
-    .imgBox {
-        display: flex;
-        width: 80vw;
+    .projects_projectBoxContainer>h1 {
+        font-size: large;
     }
 }
 
 @media screen and  (min-width: 769px) and (max-width: 1024px) {
     .projects_container {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        border: 3px solid yellow;
     }
-
-    .projects_container>h1 {
-        font-size: 2.25rem;
-        line-height: 2.5rem;
-    }
-
     .projects_container>p {
+        margin-top: 200px;
         width: 33%;
     }
-}
+    .projects_projectbox:hover .projects_projectBoxContainer{
+        opacity: 1;
+        color: white;
+        border: 1px solid #34D399;
+        border-radius: 4px;
+        line-height: 1.5rem;
+        width: 40vw;
+    }
 
+    .projects_projectBoxContainer>p {
+
+    }
+    .projects_projectBoxContainer>h1 {
+        font-size: large;
+    }
+} */
+
+/* 
 @media screen and  (min-width: 1025px) and (max-width: 1200px) {
-    /* The styles here will apply for Desktops and large screens. You can place the required CSS here */
+    .projects_container {
+        border: 3px solid orange;
+    }
+    .projects_gallery {
+
+        padding: 0;
+        flex-direction:row;
+    }
+    .projects_container>p {
+        margin-top: 200px;
+        width: 33%;
+    }
+    .projects_projectbox:hover .projects_projectBoxContainer{
+        opacity: 1;
+        color: white;
+        border: 1px solid #34D399;
+        border-radius: 4px;
+        line-height: 1.5rem;
+        width: 40vw;
+        margin: 5em;
+    }
+
+    .imgBox {
+        width: 40vw;
+    }
+
+    .projects_projectBoxContainer>p {
+   
+    }
+    .projects_projectBoxContainer>h1 {
+        font-size: large;
+    }
 }
 
-@media screen and (min-width: 1201px) {
-    .projects_projectBoxContainer {
+
+ */
+/* @media screen and (min-width: 1201px) {
+    .projects_container {
+        border: 3px solid red;
+        align-items: center;
+        justify-content: center;
+    }
+    .projects_container>p {
+        margin-top: 200px;
+        width: 33%;
+    }
+
+    .projects_gallery{
+        margin: 10em;
+        justify-content: space-around;
+        height: 1000px;
+        margin-left: 10em;
+        margin-right: 10em;
+        
+    }
+    .projects_projectbox:hover .projects_projectBoxContainer {
+     
+        opacity: 1;
+        color: white;
+        border: 1px solid #34D399;
+        border-radius: 4px;
+        line-height: 1.5rem;
+        width: 400px;
+        object-fit:none;
+        overflow: none;
+        
+    }
+
+    .imgBox{
+        border: 1px solid orange;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 40vw;
+        height: 100%;
+    
+    }
+
+    .projects_gallery>a {
+        border: 1px solid green;
+        height: max-content;
         width: 400px;
     }
-    /* The styles here will apply for Extra large screens, TVs. You can place the required CSS here */
-}
 
+     .projects_projectBoxContainer>p {
+    
+    }
+    .projects_projectBoxContainer>h1 {
+        font-size: large;
+    } 
+
+ } */

@@ -1,4 +1,5 @@
-#testi_section {
+.testi_section {
+    margin-top: 20vh;
     background-color: #111827;
     color: #9CA3AF;
     height: max-content;
@@ -230,6 +231,7 @@
         height:fit-content;
     }
     .testi_container {
+        margin-top: 200px;
         padding-top: 0;
     }
     #text_section {

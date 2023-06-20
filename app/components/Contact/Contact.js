@@ -27,7 +27,7 @@ export default function Contact() {
   }
 
   return (
-    <section id={styles.contact_section}>
+    <section id="contact" className={styles.contact_section}>
       <div className={styles.contact_container}>
       <BriefcaseIcon className={styles.contact_icon} />
         <h2>Hire Me</h2>
@@ -70,15 +70,15 @@ export default function Contact() {
             name="contact"
             onSubmit={handleSubmit}
             className={styles.contact_form}>
-            <p style={{lineHeight: '1.625', paddingTop: '32px' }}>
+            <p style={{lineHeight: '1.625', paddingTop: '32px', textAlign: 'left' }}>
             I'm always interested in hearing from potential collaborators, clients, and fellow developers. Whether you have a project in mind or just want to connect, feel free to reach out to me using the contact form below or via email at mitsananikone@gmail.com. I'll do my best to respond to your message as soon as possible.
 
             I'm looking forward to hearing from you! <br/>
             </p>
-            <div className={styles.contact_signature}><h4>Mit</h4></div>
+            <div className={styles.contact_signature}><h5>Mit</h5></div>
             
             
-            <div style={{position: 'relative', marginBottom: '1rem', marginTop: '100px'}}>
+            <div>
               <label htmlFor="name" className={styles.contact_nameLabel}>
                 Name
               </label>
@@ -90,7 +90,7 @@ export default function Contact() {
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            <div style={{position: 'relative', marginBottom: '1rem' }}>
+            <div>
               <label htmlFor="email" className={styles.contact_emailLabel}>
                 Email
               </label>
@@ -102,16 +102,16 @@ export default function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div style={{position: 'relative', marginBottom: '1rem' }}>
+            <div>
               <label
                 htmlFor="message"
                 className={styles.contact_msgLabel}>
-                Message
+                Message 
               </label>
               <textarea
                 id="message"
                 name="message"
-                className={styles.contact_msgInput}
+                className={styles.contact_inputMsg}
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>

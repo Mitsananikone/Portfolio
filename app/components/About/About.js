@@ -25,7 +25,7 @@ export default function About() {
               href="#projects"
               className={styles.about_projects}
             >
-              See My Past Work
+              See My Work
             </a>
           </div>
         </div>

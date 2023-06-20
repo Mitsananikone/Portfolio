@@ -7,7 +7,7 @@ import styles from './Testimonials.module.css';
 
 export default function Testimonials() {
   return (
-    <section id={styles.testi_section}>
+    <section id="testimontials" className={styles.testi_section}>
       <div className={styles.testi_container}>
         <UsersIcon className={styles.testi_iconContainer} />
         <h2>
