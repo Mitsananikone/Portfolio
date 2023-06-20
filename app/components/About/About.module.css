@@ -97,6 +97,9 @@
 
 /* blue */
 @media screen and (min-width: 321px) and (max-width: 480px) {
+    .about_container {
+        padding: 2em 0;
+    }
     .about_title {
         font-size: 1.875rem;
         line-height: 2.25rem;

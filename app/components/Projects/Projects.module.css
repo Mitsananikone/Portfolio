@@ -253,35 +253,92 @@
 
 }
 
-/*
+
 
 
 
 @media screen and  (min-width: 320px) and (max-width: 480px) {
+    .projects_section {
+        padding-bottom: 0;
+    }
+
     .projects_container {
-        border: 3px solid blue;
+        padding: 0;
+        margin: 0;
+
     }
-    .projects_container>p {
-        margin-top: 200px;
-        width: 33%;
+
+    .projects_gallery {
+        border-radius: 0;
+        height: auto;
     }
-    .projects_projectbox:hover .projects_projectBoxContainer{
+
+    .projects_galleryInner {
+        border-radius: 0;
+        margin-top: 5em;
+        margin-left: 2em;
+        margin-right: 2em;
+
+    }
+
+    .projects_gallery>a {
+        border-radius: 0;
+        padding: 0;
+        margin: 0;
+        width: 100vw;
+        /* border: 1px solid cyan; */
+    }
+
+    .projects_projectbox {
+        border-radius: 4px;
+        padding: 0;
+        margin: 0;
+        width: 90vw;
+    }
+
+    .imgBox {
+        border-radius: 4px;
+        margin: 0;
+        width: 90vw;
+        border: 1px solid #6366F1;
+    }
+
+    .projects_projectBoxContainer {
+        border-radius: 4px;
+        align-items: center;
+        border-color: #1F2937;
+        padding: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        margin: 0;
+    }
+
+    .projects_projectbox:hover .projects_projectBoxContainer {
+        padding: 2em;
+        border-radius: 4px;
         opacity: 1;
         color: white;
         border: 1px solid #34D399;
-        border-radius: 4px;
         line-height: 1.5rem;
-        width: 40vw;
+    }
+
+    .projects_projectBoxContainer>h1 {
+        font-weight: 300;
+        color: #34D399;
+    }
+
+    .projects_projectBoxContainer>h2 {
+        /* display: none; */
     }
 
     .projects_projectBoxContainer>p {
-        display: none;
-    }
-    .projects_projectBoxContainer>h1 {
-        font-size: large;
+        /* display: none; */
     }
 }
 
+
+
+/*
 @media screen and  (min-width: 481px) and (max-width: 768px) {
     .projects_container {
         border: 3px solid green;
