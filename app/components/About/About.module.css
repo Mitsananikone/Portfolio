@@ -24,17 +24,18 @@
 
 .about_title {
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #34D399;
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 500;
 }
 
 .about_break {
-    display: none;
+    height: 3em;
 }
 
 .about_info {
+    margin-top: 2em;
     margin-bottom: 2rem;
     line-height: 1.625;
 }

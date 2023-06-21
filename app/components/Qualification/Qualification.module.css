@@ -1,5 +1,5 @@
 .qual_section {
-  margin-top: 20vh;
+  margin-top: 10vh;
   background-color: #111827;
   color: #9CA3AF;
   height: 1000px;
@@ -238,7 +238,7 @@
     line-height: 2.5rem;
   }
   .qual_container {
-    margin-top: 0;
+    margin-top: -80vh;
   }
 
 }

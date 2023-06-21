@@ -120,10 +120,12 @@
     }
     .skills_gallery {
         flex-direction: column;
-        width: 80%;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
     }
     .skills_check {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -131,6 +133,14 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .skills_iconContainer {
         margin-top: 0;
+        margin-left: 5em;
+        margin-right: 5em;
+    text-align: center;
+    }
+    .skills_iconContainer>p {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
     }
     .skills_gallery {
         margin-left: auto;

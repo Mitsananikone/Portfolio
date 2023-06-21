@@ -9,8 +9,10 @@ export default function About() {
         <div className={styles.about_infotext}>
           <h1 className={styles.about_title}>
             Hi, I'm Mit! <br />
-            <br className={styles.about_break} /> I have a passion for using technology to solve real-world problems and improve people's lives.
           </h1>
+          <h2>
+            <br className={styles.about_break} /> I have a passion for using technology to solve real-world problems and improve people's lives. <br />
+            </h2>
           <p className={styles.about_info}>
             I love creating apps that can be used in everyday life. Whether it's a productivity tool, a game, or a social media platform, I enjoy exploring new ideas and pushing the boundaries of what's possible with technology.
           </p>
